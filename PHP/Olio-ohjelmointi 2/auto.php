@@ -12,7 +12,7 @@
         }
 
         public function tulostaTankki(){
-            echo $this->tankinTilavuus;
+            echo "Auton tankin tilavuus on " .$this->tankinTilavuus . ".<br>";
         }
 
         public function kaynnisty() {
