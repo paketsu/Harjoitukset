@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Array methods</title>
+</head>
+<body>
+
+</body>
+<script>
+    /*
+Task:
+Make new object which contains: {“coucou”: “hello”, “comment”: “how”, “va”: “are”, “tu”:” you”}. Create two arrays from this object:
+* The 1st one : [“coucou”, “comment”, “va”, “tu”]
+* The 2nd one: [“hello”, “how”, “are”, “you”]
+You have then to display those two arrays in the console of the browser.
+*/
+
+let sentence = ["coucou", "hello", "comment", "how", "va", "are", "tu", "you"];
+
+const convertToFrench = () => {
+    let french = [];
+    let index = 0;
+    while (index < sentence.length) {
+        let word = sentence[index];
+        french.push(word);
+        index = index + 2;
+    }
+    let frenchOnly = french.toString();
+    console.log(frenchOnly);
+} 
+
+const convertToEnglish = () => {
+    let english = [];
+    let index = 1;
+    while (index < sentence.length) {
+        let word = sentence[index];
+        english.push(word);
+        index = index + 2;
+    }
+    let englishOnly = english.toString();
+    console.log(englishOnly);
+} 
+
+convertToFrench();
+convertToEnglish();
+
+</script>
+</html>
