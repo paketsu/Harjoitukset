@@ -1,0 +1,38 @@
+body {
+    height: 1500px;
+    background-color: lightcyan;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    align-content: center;
+}
+
+#element {
+    display: block;
+    text-align: center;
+    position: fixed;
+    top: 100px;
+    width: 300px;
+    height: auto;
+    background-color: orangered;
+    border-radius: 5%;
+}
+
+h1, h2 {
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    font-size: 1.5em;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.button {
+    background-color: white;
+    padding: 10px;
+}
