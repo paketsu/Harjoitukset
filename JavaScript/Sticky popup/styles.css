@@ -19,6 +19,7 @@ body {
     height: auto;
     background-color: orangered;
     border-radius: 5%;
+    visibility: hidden;
 }
 
 h1, h2 {
