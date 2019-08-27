@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Array assignments</title>
+</head>
+
+<body>
+<script>
+    // Exercise 1: Make an array that has 10 numbers: var numbers = [4, -5, -2, 7, 15, -9, 0, 6, 7, 2];
+    let numbers = [4, -5, -2, 7, 15, -9, 0, 6, 7, 2];
+    
+    /* Exercise 1a. Program prints out the numbers in the array as follows:
+    1. number 4
+    2. number -5
+    ...*/
+    let serialNumber = 1;
+    for (let value of numbers) {
+        console.log(`${serialNumber}. number ${value}`);
+        serialNumber++;
+    }
+    
+    // Exercise 1b: Program swaps third and seventh number other way around.
+    const swap = (input, index_2, index_6) => {
+        let temp = input[index_2];
+        input[index_2] = input[index_6];
+        input[index_6] = temp;
+        console.log(numbers.toString());
+    }
+    swap(numbers, 2, 6);
+    
+    // Exercise 1c: Program calculates the sum of the numbers and prints out the result.
+    let sum = 0;
+    let index = 0;
+    countTogether = () => {
+        for (let value of numbers) {
+            sum = sum + value;
+            index++;
+            }
+        return sum;
+        }
+    let sumOfNumbers = countTogether(numbers);
+    console.log(sumOfNumbers);
+    
+    // Exercise 1d: Program calculates the average of the numbers and prints out the result.
+    let amount = numbers.length;
+    let average = sumOfNumbers / amount;
+    console.log(average);
+
+    // Exercise 1e: Program finds out the smallest number and prints it.
+    console.log(Math.min(...numbers));
+
+    // Exercise 1f. Program asks one number from the user and then counts how many times that number is in the array. 
+    // Program prints out the result.
+    const userInput = window.prompt("Enter a number.");
+    const findOccurrences = (input, array) => {
+        let realInput = parseInt(input);
+        let occurrence = 0;
+        for (let value of array) {
+            if (realInput === value) {
+                occurrence++;
+            }
+        }
+        console.log(occurrence);
+    }
+    findOccurrences(userInput, numbers);
+
+    // Exercise 1g. Program prints out all the numbers that are in the array before 0.
+    const printNumbersBelow0 = (array) => {
+        for (let value of array) {
+            if (value < 0) {
+                console.log(value);
+            }
+        }
+    }
+    printNumbersBelow0(numbers);
+
+    // Exercise 1h. Program counts how many numbers there are after 0 and prints out the result.
+    const amountOfNumbersAbove0 = (array) => {
+        let amountOfNumbers = 0;
+        for (let value of array) {
+            if (value > 0) {
+                amountOfNumbers++;
+            }
+        }
+        console.log(amountOfNumbers);
+    }
+    amountOfNumbersAbove0(numbers);
+
+    /* 2. Make a program that draws 7 digits for Lotto numbers. 
+    You have to make sure that same number isn’t there many times. 
+    You can use array that has 40 pieces of zeros. 
+    When you get a random number that is the index of the array and you make the value inside zero to one, 
+    but if it already was one you draw a new random number. 
+    At the end you print out the indexes that has one as a value inside.
+    Go and check how you can get random number in JavaScript. https://www.w3schools.com/jsref/jsref_random.asp https://www.geeksforgeeks.org/javascript-math-random-function/ */
+    let list = new Array(40);
+    const getRandomNumber = (min, max) => {
+        return Math.floor(Math.random() * (max - min +1) + min);
+    }
+    const playLottery = (array) => {
+        let i = 0;
+        let newArray = [];
+        while (i < array.length) {
+            let newValue = getRandomNumber(1,40);
+            newArray.includes(newValue) ? 
+            newValue = getRandomNumber(1,40) : newArray.push(newValue);
+            i++;
+            }
+            console.log(newArray.toString());
+        }  
+    playLottery(list);
+
+</script>
+</body>
+</html>
