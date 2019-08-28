@@ -1,0 +1,114 @@
+<!-- Task
+    Create a website containing Header, Navigation, Main and Footer. The Main section should include a container and
+four divs which each contain minimum of one picture and one div that includes text. Start with the mobile first approach and
+organize the content of the first div using display:inline-block, the second using position:absolute, the third using floats and
+the fourth using flexbox. Add a couple of extra pictures to the fourth div.
+The container can be organized using the method that you want to. 
+You can design and complete Header and Footer as you please,
+but Navigation should include links to each div in the Main section.Finally make a tablet and a display versio of the page. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="reset.css" rel="stylesheet" type="text/css">
+    <link href="ex4.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=KoHo|Lobster" rel="stylesheet">
+    <title>Exercise with positioning</title>
+</head>
+
+<body>
+    <header>
+        <h1>Auringonlaskun kuvaaminen</h1>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#containerEka">Aluksi</a></li>
+                <li><a href="#containerToka">Yksityiskohdat</a></li>
+                <li><a href="#containerKolmas">Siluetti etualalla</a></li>
+                <li><a href="#containerNeljäs">Asetusten valinta</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="container">
+            <section id="containerEka" class="osiot">
+                <h3>Aluksi</h3>
+                <section id="eka" class="osiot">
+                    <p id="aallotKuvaus">Auringonlaskut ovat yksi suosituimmista kuvauskohteista. Vielä senkin jälkeen,
+                        kun aurinko on
+                        laskenut horisontin taakse, iltarusko valaisee taivaan vielä noin 20 minuutin ajan ja tuottaa
+                        kauniita kuvia. Kokeile käytännön vinkkejämme taianomaisten hetkien tallentamiseen.</p><img
+                        id="aallotKuva" src="beach-1867285_960_720.jpg" alt="Aallot">
+                </section>
+            </section>
+            <section id="containerToka" class="osiot">
+                <h3>Yksityiskohdat</h3>
+                <section id="toka" class="osiot">
+                    <img id="kuvaAuringonlasku" src="sunset-100367_960_720.jpg" alt="Auringonlasku"><p id="kuvausAuringonlasku">Ottaaksesi vaikuttavia, dramaattisia auringonlaskukuvia tarvitset
+                        yleensä muutakin kuin
+                        auringonlaskun – muotoja, varjoja, yksityiskohtia tai tekstuureja etualalle. Myös taivaalla
+                        olevat
+                        pilvet ja linnut voivat auttaa lisäämään kuvaan syvyyttä ja mielenkiintoa ja tuoda siihen
+                        eloisuutta.</p>
+                </section>
+            </section>
+            <section id="containerKolmas" class="osiot">
+                <h3>Siluetti etualalla</h3>
+                <section id="kolmas" class="osiot">
+                    <img id="kuvaNuoriso" src="youth-570881_960_720.jpg" alt="Nuoriso"><p id="kuvausNuoriso">Koska käytät tyypillisesti yli sekunnin mittaista valotusaikaa (jos aurinko on
+                        jo painunut horisontin taa), koita välttää kameran tärähtämistä niin paljon kuin mahdollista –
+                        käytä siis jalustaa ja lankalaukaisinta tai kameran itselaukaisinta. Kun valo vähenee, tarvitset
+                        pidempiä suljinaikoja. Jatka kuvien tarkastelua näytöllä ja histogrammilla (katso alla) ja lisää
+                        tarvittaessa valotusaikaa seuraavaan kuvaan. Etualan siluettiyksityiskohtia varten voit lyhentää
+                        suljinaikaa, mutta älä ota mukaan liikaa siluettiyksityiskohtia, sillä ne voivat hallita kuvaa
+                        turhan paljon mustuudellaan.</p>
+                </section>
+            </section>
+            <section id="containerNeljäs" class="osiot">
+                <h3>Asetusten valinta</h3>
+                <section id="neljäs" class="osiot">
+                    <img id="kuvaRanta" src="california-1751455_960_720.jpg" alt="Ranta">
+                    <p id="kuvausRanta">
+                        <p>Kun aurinko vielä paistaa, aseta aukon esivalinta (kameran tila A) ja valitse automaattinen
+                            ISO-arvo,
+                            jos kuvaat käsivaralla – näin kameran tulisi tuottaa tasapainoinen valotus, kun valo vähenee
+                            taivaalla. Auringonlaskun aikaan valo muuttuu niin nopeasti, että jos käytät käsisäätöä
+                            (tila M),
+                            sinun on jatkuvasti säädettävä kameran asetuksia, jotta valotus säilyy hyvänä, mikä vähentää
+                            aikaa
+                            arvioida valoa ja kuvan sommittelua. Jos tarvitset pidemmän suljinajan, voit käyttää joko
+                            harmaasuodinta tai pienempää aukkoa, ts. f/11:tä tai f/16:ta. Matalan ISO-arvon (64 tai 100)
+                            ansiosta kuva on myös korkealaatuisempi ja voit valita pidemmän suljinajan.</p>
+
+                        <p>Jos kuvaat aukon esivalinnalla iltahämärän tai sinisen hetken aikaan, kun aurinko on jo
+                            laskenut,
+                            sinun kannattaa käyttää kamerasi valotuksenkorjaustoimintoa, jonka avulla voit hienosäätää
+                            valotusta
+                            ja varmistaa, että se on oikea. Vaihtoehtoisesti voit hallita valotusta täysin vaihtamalla
+                            käsisäätöön (M-tila), jonka avulla voit säätää suljinaikaa ja aukon asetuksia enemmän.</p>
+
+                        <p>Voit varmistaa tarkat kuvat vähäisessä valossa valitsemalla automaattitarkennuksen tai
+                            käsitarkennustilan. Automaattitarkennuksen avulla voit tarkentaa nopeammin, kun käytät
+                            keskitarkennuspistettä tilanteissa, joissa valon määrä on vähäinen. Jos koet, että tarkennus
+                            on
+                            edelleen haastavaa, vaihda objektiivin ja kameran rungon käsitarkennustilaan, aktivoi
+                            reaaliaikanäkymä ja suurenna sitten kuva nestekidenäytöllä käyttämällä joko kosketusnäyttöä
+                            tai
+                            plus-painiketta. Kierrä objektiivin käsitarkennusrengasta, kunnes kuvauskohteesta tulee
+                            erittäin
+                            tarkka. Kolmas vaihtoehto on esitarkentaa objektiivi kuvauskohteeseen, kun valoa on vielä
+                            jäljellä
+                            ja lukita tarkennus.</p>
+                    </p>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <h2>Kuvat: Pixabay, tekstit: Nikon </h2>
+    </footer>
+</body>
+
+</html>
