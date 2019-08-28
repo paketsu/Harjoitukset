@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    position: sticky;
+    z-index: 30;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: darkturquoise;
+    text-align: center;
+}
+
+header h1 {
+    padding: 20px 0 20px 0;
+}
+
+#navbar {
+    width: 100%;
+    overflow: hidden;
+    background-color: sienna;
+}
+
+main {
+    width: 100%;
+}
+
+.osiot {
+    position: relative;
+    width: 100%;
+    padding: 20px 0 0 0;
+}
+
+#eka {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#aallotKuvaus {
+    width: 100%;
+    padding: 0 20px 20px 20px;;
+}
+
+#aallotKuva {
+    width: 100%;
+    vertical-align: top;
+    height: 100%;
+}
+
+#containerKolmas {
+    background-color: rgb(243, 233, 229);
+}
+
+#kuvaNuoriso {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+
+#kuvausNuoriso {
+    display: inline-block;
+    padding-top: 20px;
+    width: 100%;
+}
+
+#kuvaAuringonlasku {
+    position: relative;
+    width: 100%;
+}
+
+#kuvausAuringonlasku {
+    color: white;
+    position: absolute;
+    top: 30px;
+    font-size: 1em;
+}
+
+#neljäs {
+    clear: left;
+    display: block;
+    width: 100%;
+}
+
+#kuvaRanta {
+    vertical-align: top;
+    width: 100%;
+    margin: 0 0 20px 0;
+}
+
+#kuvausRanta {
+    padding: 0 20px 0 20px;
+}
+
+h1 {
+    font-family: 'KoHo', sans-serif;
+    color: white;
+    font-size: 1.7em;
+}
+
+h2 {
+    font-family: 'KoHo', sans-serif;
+    color: white;
+}
+
+h3 {
+    font-family: 'KoHo', sans-serif;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'KoHo', sans-serif;
+    font-size: 1.3em;
+    padding: 0 20px 20px 20px;
+}
+
+footer {
+    padding: 20px;
+    background-color: darkturquoise;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    font-family: 'KoHo', sans-serif;
+    color: white;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+  }
+  
+  li a:hover {
+    background-color: rgb(197, 109, 68);
+  }
+
+  @media only screen and (min-width: 600px) {
+    #eka {
+        flex-direction: row;
+    }
+
+    #kuvaRanta {
+        float: left;
+        vertical-align: top;
+        width: 50%;
+        margin: 0 20px 20px 0;
+    }
+
+    #kuvaNuoriso {
+        width: 30%;
+    }
+
+    #kuvausNuoriso {
+        width: 70%;
+        padding-top: 0;
+    }
+  }
