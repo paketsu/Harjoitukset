@@ -44,6 +44,10 @@
     let sumOfNumbers = countTogether(numbers);
     console.log(sumOfNumbers);
     
+    // Alternatively, you can use reduce():
+    const reducer = (accumulator, currentValue) => accumulator + currentValue;
+    console.log(numbers.reduce(reducer));
+    
     // Exercise 1d: Program calculates the average of the numbers and prints out the result.
     let amount = numbers.length;
     let average = sumOfNumbers / amount;
@@ -108,9 +112,9 @@
             newArray.includes(newValue) ? 
             newValue = getRandomNumber(1,40) : newArray.push(newValue);
             i++;
-            }
-            console.log(newArray.toString());
-        }  
+        }
+        console.log(newArray.toString());
+    }  
     playLottery(list);
 
 </script>
